@@ -1,16 +1,29 @@
 import React from 'react'
 import { Routes, Route} from 'react-router-dom'
-import About from '../pages/About'
 import Home from '../pages/Home'
+import Destination from '../pages/Destination'
+import Crew from '../pages/Crew'
+import Technology from '../pages/Technology'
+import Navbar from './Navbar'
+import logo from '../images/shared/logo.svg'
 
 function Main() {
   return (
-      <div className=' h-screen bg-black text-yellow-50'>
-          <Routes>
+    <main className='bg-black'>
+
+      
+        <img src={logo} alt=""  className='w-16 h-16'/>
+          
+          {/* <Routes>
               <Route path='/' element= {<Home />} />
-              <Route path='/about' element= {<About />} />
-          </Routes>
-    </div>
+              <Route path='/' element= {<Destination />} />
+              <Route path='/' element= {<Crew />} />
+              <Route path='/' element= {<Technology />} />   
+          </Routes> */}
+      
+     
+    
+    </main>
   )
 }
 
