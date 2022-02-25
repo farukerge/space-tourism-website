@@ -1,29 +1,28 @@
 import React from 'react'
-import { Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
 import Destination from '../pages/Destination'
 import Crew from '../pages/Crew'
 import Technology from '../pages/Technology'
 import Navbar from './Navbar'
-import logo from '../images/shared/logo.svg'
+
 
 function Main() {
   return (
-    <main className='bg-black'>
-
-      
-        <img src={logo} alt=""  className='w-16 h-16'/>
-          
-          {/* <Routes>
-              <Route path='/' element= {<Home />} />
-              <Route path='/' element= {<Destination />} />
-              <Route path='/' element= {<Crew />} />
-              <Route path='/' element= {<Technology />} />   
-          </Routes> */}
-      
-     
-    
-    </main>
+    <div className='bg-black  relative h-screen text-white'>
+      <Router>
+        
+        <Navbar />
+        
+        <Routes>
+            <Route path='/' element = {<Home />} />
+            <Route path='/destination' element = {<Destination />} />
+            <Route path='/crew' element = {<Crew />} />
+            <Route path='/technology' element = {<Technology />} />
+        </Routes>
+        
+      </Router>
+   </div>
   )
 }
 

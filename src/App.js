@@ -1,5 +1,6 @@
+import { Router } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter as Router} from 'react-router-dom'
+import Main from './components/Main';
 import Navbar from './components/Navbar';
 
 
@@ -7,11 +8,11 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-        
+    <div>
+      
+      <Main/>
 
-    </Router>
+    </div>
   );
 }
 
