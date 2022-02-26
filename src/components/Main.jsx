@@ -9,7 +9,7 @@ import Navbar from './Navbar'
 
 function Main() {
   return (
-    <div className='bg-black  relative h-screen text-white'>
+    <div className='   relative h-screen'>
       <Router>
         
         <Navbar />
