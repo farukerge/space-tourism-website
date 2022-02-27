@@ -14,7 +14,7 @@ function Home() {
           </div>
       
           <div className='bg-white rounded-full h-96  text-center items-center grid  w-1/4 '>
-              <h1 className='text-4xl  text-black  contents p-4 tracking-widest '>EXPLORE</h1>
+              <h1 className='text-4xl  text-black  contents p-4 tracking-widest cursor-pointer '>EXPLORE</h1>
           </div>
 
       </div>

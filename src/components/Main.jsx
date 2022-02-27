@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home'
-import Destination from '../pages/Destination'
+import Destination from '../pages/Destination/Destination'
 import Crew from '../pages/Crew'
 import Technology from '../pages/Technology'
 import Navbar from './Navbar'
