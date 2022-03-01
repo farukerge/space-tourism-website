@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../../data/data.json'
 import { useState } from 'react'
+
  
 
 function Destination() {
@@ -22,14 +23,14 @@ function Destination() {
             </h2>
 
             <img
-              src={images.png}
+              src={images}
               alt={name}
               title={name}
               className="block mx-auto"
             />
           </div>
 
-          <article className="pt-20 text-center md:text-left pb-10 w-3/6">
+          <div className="pt-20 text-center md:text-left pb-10 w-3/6">
             <ul className="flex items-center justify-center md:justify-start mb-10">
               {planets.map((item, index) => (
                 <li key={index} className="mr-5">
@@ -61,7 +62,7 @@ function Destination() {
                 Est. travel time<span className="text-4xl block">{travel}</span>
               </li>
             </ul>
-          </article>
+          </div>
         </div>
       </section>
   )

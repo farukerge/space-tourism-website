@@ -23,6 +23,13 @@
     background-position: center;
 }
 
+.crew {
+    background: url('./images/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* 
 @layer base {
 
